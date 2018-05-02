@@ -1,0 +1,752 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E01EAB31EDEA3D3000F36A5 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E01EAB21EDEA3D3000F36A5 /* AuthProvider.swift */; };
+		7E01EAB51EE75808000F36A5 /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E01EAB41EE75808000F36A5 /* SigninVC.swift */; };
+		7E2E195D1EFA902700D02C55 /* GymProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2E195C1EFA902700D02C55 /* GymProfileVC.swift */; };
+		7E2E195F1EFA912700D02C55 /* CoachProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2E195E1EFA912700D02C55 /* CoachProfileVC.swift */; };
+		7E2E19631F0274B700D02C55 /* HomeModelMAG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2E19621F0274B700D02C55 /* HomeModelMAG.swift */; };
+		7E2F7751203FC188003A3CA4 /* AddGymViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2F7750203FC188003A3CA4 /* AddGymViewController.swift */; };
+		7E2F775720442D0C003A3CA4 /* MenuArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2F775620442D0C003A3CA4 /* MenuArrays.swift */; };
+		7E2F775C204430FD003A3CA4 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2F775A204430FD003A3CA4 /* MenuTableViewCell.swift */; };
+		7E2F775D204430FD003A3CA4 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E2F775B204430FD003A3CA4 /* MenuTableViewCell.xib */; };
+		7E2F775F2044F55F003A3CA4 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2F775E2044F55F003A3CA4 /* MenuViewController.swift */; };
+		7E2F77612047CC3E003A3CA4 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2F77602047CC3E003A3CA4 /* Client.swift */; };
+		7E4227761F3AA3F80020F1FD /* ClassTimesDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4227751F3AA3F80020F1FD /* ClassTimesDays.swift */; };
+		7E505F791F96DC1A005AF77F /* ClassesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E505F781F96DC1A005AF77F /* ClassesView.swift */; };
+		7E5BBFD11ED3E27D00B277C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5BBFD01ED3E27D00B277C0 /* AppDelegate.swift */; };
+		7E5BBFD81ED3E27D00B277C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5BBFD61ED3E27D00B277C0 /* Main.storyboard */; };
+		7E5BBFDA1ED3E27D00B277C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E5BBFD91ED3E27D00B277C0 /* Assets.xcassets */; };
+		7E5BBFDD1ED3E27D00B277C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5BBFDB1ED3E27D00B277C0 /* LaunchScreen.storyboard */; };
+		7E5BC0071ED3E7E800B277C0 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5BC0061ED3E7E800B277C0 /* Launch Screen.storyboard */; };
+		7E793DFA1EF342B700F1ABCE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E793DF91EF342B700F1ABCE /* GoogleService-Info.plist */; };
+		7E793E021EF34C8900F1ABCE /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E793E011EF34C8900F1ABCE /* HomeVC.swift */; };
+		7E793E041EF34CA200F1ABCE /* ClassesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E793E031EF34CA200F1ABCE /* ClassesTableViewController.swift */; };
+		7E793E0C1EF6AEE600F1ABCE /* ClientsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E793E0B1EF6AEE600F1ABCE /* ClientsVC.swift */; };
+		7E793E231EF6B5C600F1ABCE /* PaymentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E793E221EF6B5C600F1ABCE /* PaymentsVC.swift */; };
+		7E793E251EF6BD8C00F1ABCE /* CoachGymListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E793E241EF6BD8C00F1ABCE /* CoachGymListVC.swift */; };
+		7E793E271EF7E21A00F1ABCE /* ClassesEditAddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E793E261EF7E21A00F1ABCE /* ClassesEditAddVC.swift */; };
+		7E857354203F57C000F20134 /* AddGyms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E857353203F57C000F20134 /* AddGyms.swift */; };
+		7E857356203F591E00F20134 /* GymBlueprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E857355203F591E00F20134 /* GymBlueprint.swift */; };
+		7E857358203F7CC800F20134 /* MyGymsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E857357203F7CC800F20134 /* MyGymsTableTableViewController.swift */; };
+		7E85735A203F7D8C00F20134 /* MyGymsMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E857359203F7D8C00F20134 /* MyGymsMapVC.swift */; };
+		7E85735D203F827300F20134 /* MyGymsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E85735B203F827300F20134 /* MyGymsListTableViewCell.swift */; };
+		7E85735E203F827300F20134 /* MyGymsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E85735C203F827300F20134 /* MyGymsListTableViewCell.xib */; };
+		7EB1F8FD208D2E6500293E50 /* ClassCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB1F8FB208D2E6500293E50 /* ClassCellTableViewCell.swift */; };
+		7EB1F8FE208D2E6500293E50 /* ClassCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EB1F8FC208D2E6500293E50 /* ClassCellTableViewCell.xib */; };
+		7EB1F900208D53F100293E50 /* TheClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB1F8FF208D53F100293E50 /* TheClass.swift */; };
+		7EB1F902208E175400293E50 /* PickerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB1F901208E175400293E50 /* PickerData.swift */; };
+		7EC556D9203AD07100FDAC19 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC556D8203AD07100FDAC19 /* RoundButton.swift */; };
+		7EC55717203EFA0600FDAC19 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC55716203EFA0600FDAC19 /* RoundImageView.swift */; };
+		7EECE519209000D9008C4EC7 /* AddEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EECE518209000D9008C4EC7 /* AddEditTableViewController.swift */; };
+		7EECE51C2090044C008C4EC7 /* AddEditTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EECE51A2090044C008C4EC7 /* AddEditTableViewCell.swift */; };
+		7EECE51D2090044C008C4EC7 /* AddEditTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EECE51B2090044C008C4EC7 /* AddEditTableViewCell.xib */; };
+		7EECE5412099ED94008C4EC7 /* TheCoach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EECE5402099ED94008C4EC7 /* TheCoach.swift */; };
+		7EECE5432099FC15008C4EC7 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EECE5422099FC15008C4EC7 /* Data.swift */; };
+		A59D785768D21E0FA572F1E9 /* Pods_MAGyms_Coach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AFBDC69A462014515703DAD /* Pods_MAGyms_Coach.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4AFBDC69A462014515703DAD /* Pods_MAGyms_Coach.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MAGyms_Coach.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E01EAB21EDEA3D3000F36A5 /* AuthProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
+		7E01EAB41EE75808000F36A5 /* SigninVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
+		7E2E195C1EFA902700D02C55 /* GymProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GymProfileVC.swift; sourceTree = "<group>"; };
+		7E2E195E1EFA912700D02C55 /* CoachProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachProfileVC.swift; sourceTree = "<group>"; };
+		7E2E19621F0274B700D02C55 /* HomeModelMAG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModelMAG.swift; sourceTree = "<group>"; };
+		7E2F7750203FC188003A3CA4 /* AddGymViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGymViewController.swift; sourceTree = "<group>"; };
+		7E2F775620442D0C003A3CA4 /* MenuArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuArrays.swift; sourceTree = "<group>"; };
+		7E2F775A204430FD003A3CA4 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		7E2F775B204430FD003A3CA4 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		7E2F775E2044F55F003A3CA4 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		7E2F77602047CC3E003A3CA4 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		7E4227751F3AA3F80020F1FD /* ClassTimesDays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassTimesDays.swift; sourceTree = "<group>"; };
+		7E505F781F96DC1A005AF77F /* ClassesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesView.swift; sourceTree = "<group>"; };
+		7E5BBFCD1ED3E27D00B277C0 /* MAGyms Coach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAGyms Coach.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E5BBFD01ED3E27D00B277C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7E5BBFD71ED3E27D00B277C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7E5BBFD91ED3E27D00B277C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E5BBFDC1ED3E27D00B277C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7E5BBFDE1ED3E27D00B277C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E5BC0061ED3E7E800B277C0 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		7E793DF91EF342B700F1ABCE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7E793E011EF34C8900F1ABCE /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		7E793E031EF34CA200F1ABCE /* ClassesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClassesTableViewController.swift; path = ../ClassesTableViewController.swift; sourceTree = "<group>"; };
+		7E793E0B1EF6AEE600F1ABCE /* ClientsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientsVC.swift; sourceTree = "<group>"; };
+		7E793E221EF6B5C600F1ABCE /* PaymentsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsVC.swift; sourceTree = "<group>"; };
+		7E793E241EF6BD8C00F1ABCE /* CoachGymListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachGymListVC.swift; sourceTree = "<group>"; };
+		7E793E261EF7E21A00F1ABCE /* ClassesEditAddVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassesEditAddVC.swift; sourceTree = "<group>"; };
+		7E857353203F57C000F20134 /* AddGyms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGyms.swift; sourceTree = "<group>"; };
+		7E857355203F591E00F20134 /* GymBlueprint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymBlueprint.swift; sourceTree = "<group>"; };
+		7E857357203F7CC800F20134 /* MyGymsTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGymsTableTableViewController.swift; sourceTree = "<group>"; };
+		7E857359203F7D8C00F20134 /* MyGymsMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGymsMapVC.swift; sourceTree = "<group>"; };
+		7E85735B203F827300F20134 /* MyGymsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGymsListTableViewCell.swift; sourceTree = "<group>"; };
+		7E85735C203F827300F20134 /* MyGymsListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyGymsListTableViewCell.xib; sourceTree = "<group>"; };
+		7EB1F8FB208D2E6500293E50 /* ClassCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCellTableViewCell.swift; sourceTree = "<group>"; };
+		7EB1F8FC208D2E6500293E50 /* ClassCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassCellTableViewCell.xib; sourceTree = "<group>"; };
+		7EB1F8FF208D53F100293E50 /* TheClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheClass.swift; sourceTree = "<group>"; };
+		7EB1F901208E175400293E50 /* PickerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerData.swift; sourceTree = "<group>"; };
+		7EC556D8203AD07100FDAC19 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		7EC55716203EFA0600FDAC19 /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
+		7EECE518209000D9008C4EC7 /* AddEditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditTableViewController.swift; sourceTree = "<group>"; };
+		7EECE51A2090044C008C4EC7 /* AddEditTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditTableViewCell.swift; sourceTree = "<group>"; };
+		7EECE51B2090044C008C4EC7 /* AddEditTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddEditTableViewCell.xib; sourceTree = "<group>"; };
+		7EECE5402099ED94008C4EC7 /* TheCoach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCoach.swift; sourceTree = "<group>"; };
+		7EECE5422099FC15008C4EC7 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		9096C420024D959ACB0D5D33 /* Pods-MAGyms Coach.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAGyms Coach.release.xcconfig"; path = "Pods/Target Support Files/Pods-MAGyms Coach/Pods-MAGyms Coach.release.xcconfig"; sourceTree = "<group>"; };
+		B68269F11169105050D774D5 /* Pods-MAGyms Coach.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAGyms Coach.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MAGyms Coach/Pods-MAGyms Coach.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E5BBFCA1ED3E27D00B277C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59D785768D21E0FA572F1E9 /* Pods_MAGyms_Coach.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		239FA3A35871B3D7F11DC5DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B68269F11169105050D774D5 /* Pods-MAGyms Coach.debug.xcconfig */,
+				9096C420024D959ACB0D5D33 /* Pods-MAGyms Coach.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7E01EAAF1EDEA149000F36A5 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				7E01EAB21EDEA3D3000F36A5 /* AuthProvider.swift */,
+				7EECE5422099FC15008C4EC7 /* Data.swift */,
+			);
+			name = Plugins;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		7E5BBFC41ED3E27D00B277C0 = {
+			isa = PBXGroup;
+			children = (
+				7E5BBFCF1ED3E27D00B277C0 /* MAGyms Coach */,
+				7E5BBFCE1ED3E27D00B277C0 /* Products */,
+				239FA3A35871B3D7F11DC5DE /* Pods */,
+				8CB7A9CBC25E1B09B7738C9A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7E5BBFCE1ED3E27D00B277C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E5BBFCD1ED3E27D00B277C0 /* MAGyms Coach.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E5BBFCF1ED3E27D00B277C0 /* MAGyms Coach */ = {
+			isa = PBXGroup;
+			children = (
+				7E793E161EF6B0D300F1ABCE /* Notifications MVC */,
+				7E793E101EF6AF8A00F1ABCE /* Payments MVC */,
+				7E793E071EF6AE1800F1ABCE /* Classes MVC */,
+				7E793E061EF6ADE900F1ABCE /* Clients MVC */,
+				7E793E051EF6AD5D00F1ABCE /* Home MVC */,
+				7E01EAAF1EDEA149000F36A5 /* Plugins */,
+				7E5BBFD01ED3E27D00B277C0 /* AppDelegate.swift */,
+				7E5BBFD91ED3E27D00B277C0 /* Assets.xcassets */,
+				7E5BBFDB1ED3E27D00B277C0 /* LaunchScreen.storyboard */,
+				7E5BBFDE1ED3E27D00B277C0 /* Info.plist */,
+				7E793DF91EF342B700F1ABCE /* GoogleService-Info.plist */,
+			);
+			path = "MAGyms Coach";
+			sourceTree = "<group>";
+		};
+		7E5BC0081ED3E86400B277C0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7E01EAB41EE75808000F36A5 /* SigninVC.swift */,
+				7E793E011EF34C8900F1ABCE /* HomeVC.swift */,
+				7E793E241EF6BD8C00F1ABCE /* CoachGymListVC.swift */,
+				7E2E195C1EFA902700D02C55 /* GymProfileVC.swift */,
+				7E2E195E1EFA912700D02C55 /* CoachProfileVC.swift */,
+				7E857357203F7CC800F20134 /* MyGymsTableTableViewController.swift */,
+				7E857359203F7D8C00F20134 /* MyGymsMapVC.swift */,
+				7E2F7750203FC188003A3CA4 /* AddGymViewController.swift */,
+			);
+			name = Controller;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		7E5BC00A1ED3E8AB00B277C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E85735F203F82AF00F20134 /* MyGymsListTableViewCell */,
+				7E5BC0061ED3E7E800B277C0 /* Launch Screen.storyboard */,
+				7E5BBFD61ED3E27D00B277C0 /* Main.storyboard */,
+				7EC556D8203AD07100FDAC19 /* RoundButton.swift */,
+				7EC55716203EFA0600FDAC19 /* RoundImageView.swift */,
+			);
+			name = View;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		7E5BC00B1ED3E8C000B277C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7EECE5402099ED94008C4EC7 /* TheCoach.swift */,
+				7E2E19621F0274B700D02C55 /* HomeModelMAG.swift */,
+				7E857353203F57C000F20134 /* AddGyms.swift */,
+				7E857355203F591E00F20134 /* GymBlueprint.swift */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		7E793E051EF6AD5D00F1ABCE /* Home MVC */ = {
+			isa = PBXGroup;
+			children = (
+				7E5BC00B1ED3E8C000B277C0 /* Model */,
+				7E5BC00A1ED3E8AB00B277C0 /* View */,
+				7E5BC0081ED3E86400B277C0 /* Controller */,
+			);
+			name = "Home MVC";
+			sourceTree = "<group>";
+		};
+		7E793E061EF6ADE900F1ABCE /* Clients MVC */ = {
+			isa = PBXGroup;
+			children = (
+				7E793E0A1EF6AE6000F1ABCE /* Model */,
+				7E793E091EF6AE5800F1ABCE /* View */,
+				7E793E081EF6AE4B00F1ABCE /* Controller */,
+			);
+			name = "Clients MVC";
+			sourceTree = "<group>";
+		};
+		7E793E071EF6AE1800F1ABCE /* Classes MVC */ = {
+			isa = PBXGroup;
+			children = (
+				7E793E0F1EF6AF6700F1ABCE /* Model */,
+				7E793E0E1EF6AF5600F1ABCE /* View */,
+				7E793E0D1EF6AF4600F1ABCE /* Controller */,
+			);
+			name = "Classes MVC";
+			sourceTree = "<group>";
+		};
+		7E793E081EF6AE4B00F1ABCE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7E793E0B1EF6AEE600F1ABCE /* ClientsVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7E793E091EF6AE5800F1ABCE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7E793E0A1EF6AE6000F1ABCE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7E2F77602047CC3E003A3CA4 /* Client.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7E793E0D1EF6AF4600F1ABCE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7E793E031EF34CA200F1ABCE /* ClassesTableViewController.swift */,
+				7E793E261EF7E21A00F1ABCE /* ClassesEditAddVC.swift */,
+				7E505F781F96DC1A005AF77F /* ClassesView.swift */,
+				7EECE518209000D9008C4EC7 /* AddEditTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7E793E0E1EF6AF5600F1ABCE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7EB1F8FB208D2E6500293E50 /* ClassCellTableViewCell.swift */,
+				7EB1F8FC208D2E6500293E50 /* ClassCellTableViewCell.xib */,
+				7EECE51A2090044C008C4EC7 /* AddEditTableViewCell.swift */,
+				7EECE51B2090044C008C4EC7 /* AddEditTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7E793E0F1EF6AF6700F1ABCE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7E4227751F3AA3F80020F1FD /* ClassTimesDays.swift */,
+				7EB1F8FF208D53F100293E50 /* TheClass.swift */,
+				7EB1F901208E175400293E50 /* PickerData.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7E793E101EF6AF8A00F1ABCE /* Payments MVC */ = {
+			isa = PBXGroup;
+			children = (
+				7E793E131EF6AFBD00F1ABCE /* Model */,
+				7E793E121EF6AFB100F1ABCE /* View */,
+				7E793E111EF6AF9D00F1ABCE /* Controller */,
+			);
+			name = "Payments MVC";
+			sourceTree = "<group>";
+		};
+		7E793E111EF6AF9D00F1ABCE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7E793E221EF6B5C600F1ABCE /* PaymentsVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7E793E121EF6AFB100F1ABCE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7E793E131EF6AFBD00F1ABCE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7E793E161EF6B0D300F1ABCE /* Notifications MVC */ = {
+			isa = PBXGroup;
+			children = (
+				7E793E191EF6B11C00F1ABCE /* Model */,
+				7E793E181EF6B11100F1ABCE /* View */,
+				7E793E171EF6B10400F1ABCE /* Controller */,
+			);
+			name = "Notifications MVC";
+			sourceTree = "<group>";
+		};
+		7E793E171EF6B10400F1ABCE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7E2F775E2044F55F003A3CA4 /* MenuViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7E793E181EF6B11100F1ABCE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E2F775A204430FD003A3CA4 /* MenuTableViewCell.swift */,
+				7E2F775B204430FD003A3CA4 /* MenuTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7E793E191EF6B11C00F1ABCE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7E2F775620442D0C003A3CA4 /* MenuArrays.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7E85735F203F82AF00F20134 /* MyGymsListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7E85735B203F827300F20134 /* MyGymsListTableViewCell.swift */,
+				7E85735C203F827300F20134 /* MyGymsListTableViewCell.xib */,
+			);
+			path = MyGymsListTableViewCell;
+			sourceTree = "<group>";
+		};
+		8CB7A9CBC25E1B09B7738C9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AFBDC69A462014515703DAD /* Pods_MAGyms_Coach.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E5BBFCC1ED3E27D00B277C0 /* MAGyms Coach */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E5BBFE11ED3E27D00B277C0 /* Build configuration list for PBXNativeTarget "MAGyms Coach" */;
+			buildPhases = (
+				91A971E4300E19F976A7178B /* [CP] Check Pods Manifest.lock */,
+				7E5BBFC91ED3E27D00B277C0 /* Sources */,
+				7E5BBFCA1ED3E27D00B277C0 /* Frameworks */,
+				7E5BBFCB1ED3E27D00B277C0 /* Resources */,
+				BFC3B2A2362C002F8682F3F5 /* [CP] Embed Pods Frameworks */,
+				9193E5AF67F1FF60F8BF5F41 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MAGyms Coach";
+			productName = "MAGyms Coach";
+			productReference = 7E5BBFCD1ED3E27D00B277C0 /* MAGyms Coach.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E5BBFC51ED3E27D00B277C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = DennistonSutherland;
+				TargetAttributes = {
+					7E5BBFCC1ED3E27D00B277C0 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 97596MTDSE;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7E5BBFC81ED3E27D00B277C0 /* Build configuration list for PBXProject "MAGyms Coach" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E5BBFC41ED3E27D00B277C0;
+			productRefGroup = 7E5BBFCE1ED3E27D00B277C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E5BBFCC1ED3E27D00B277C0 /* MAGyms Coach */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E5BBFCB1ED3E27D00B277C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EECE51D2090044C008C4EC7 /* AddEditTableViewCell.xib in Resources */,
+				7E2F775D204430FD003A3CA4 /* MenuTableViewCell.xib in Resources */,
+				7E5BBFDD1ED3E27D00B277C0 /* LaunchScreen.storyboard in Resources */,
+				7E85735E203F827300F20134 /* MyGymsListTableViewCell.xib in Resources */,
+				7E5BBFDA1ED3E27D00B277C0 /* Assets.xcassets in Resources */,
+				7EB1F8FE208D2E6500293E50 /* ClassCellTableViewCell.xib in Resources */,
+				7E5BC0071ED3E7E800B277C0 /* Launch Screen.storyboard in Resources */,
+				7E5BBFD81ED3E27D00B277C0 /* Main.storyboard in Resources */,
+				7E793DFA1EF342B700F1ABCE /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9193E5AF67F1FF60F8BF5F41 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MAGyms Coach/Pods-MAGyms Coach-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91A971E4300E19F976A7178B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MAGyms Coach-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFC3B2A2362C002F8682F3F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MAGyms Coach/Pods-MAGyms Coach-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MAGyms Coach/Pods-MAGyms Coach-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E5BBFC91ED3E27D00B277C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E793E041EF34CA200F1ABCE /* ClassesTableViewController.swift in Sources */,
+				7E793E0C1EF6AEE600F1ABCE /* ClientsVC.swift in Sources */,
+				7E5BBFD11ED3E27D00B277C0 /* AppDelegate.swift in Sources */,
+				7E505F791F96DC1A005AF77F /* ClassesView.swift in Sources */,
+				7EECE5432099FC15008C4EC7 /* Data.swift in Sources */,
+				7E2F77612047CC3E003A3CA4 /* Client.swift in Sources */,
+				7E857354203F57C000F20134 /* AddGyms.swift in Sources */,
+				7EB1F8FD208D2E6500293E50 /* ClassCellTableViewCell.swift in Sources */,
+				7E793E251EF6BD8C00F1ABCE /* CoachGymListVC.swift in Sources */,
+				7EECE5412099ED94008C4EC7 /* TheCoach.swift in Sources */,
+				7E4227761F3AA3F80020F1FD /* ClassTimesDays.swift in Sources */,
+				7EB1F900208D53F100293E50 /* TheClass.swift in Sources */,
+				7E2E19631F0274B700D02C55 /* HomeModelMAG.swift in Sources */,
+				7EB1F902208E175400293E50 /* PickerData.swift in Sources */,
+				7E2F775F2044F55F003A3CA4 /* MenuViewController.swift in Sources */,
+				7E2E195D1EFA902700D02C55 /* GymProfileVC.swift in Sources */,
+				7E857358203F7CC800F20134 /* MyGymsTableTableViewController.swift in Sources */,
+				7EC55717203EFA0600FDAC19 /* RoundImageView.swift in Sources */,
+				7E2F775C204430FD003A3CA4 /* MenuTableViewCell.swift in Sources */,
+				7E857356203F591E00F20134 /* GymBlueprint.swift in Sources */,
+				7E793E021EF34C8900F1ABCE /* HomeVC.swift in Sources */,
+				7E2F7751203FC188003A3CA4 /* AddGymViewController.swift in Sources */,
+				7EECE51C2090044C008C4EC7 /* AddEditTableViewCell.swift in Sources */,
+				7E2E195F1EFA912700D02C55 /* CoachProfileVC.swift in Sources */,
+				7E85735A203F7D8C00F20134 /* MyGymsMapVC.swift in Sources */,
+				7E793E231EF6B5C600F1ABCE /* PaymentsVC.swift in Sources */,
+				7E2F775720442D0C003A3CA4 /* MenuArrays.swift in Sources */,
+				7EECE519209000D9008C4EC7 /* AddEditTableViewController.swift in Sources */,
+				7EC556D9203AD07100FDAC19 /* RoundButton.swift in Sources */,
+				7E793E271EF7E21A00F1ABCE /* ClassesEditAddVC.swift in Sources */,
+				7E85735D203F827300F20134 /* MyGymsListTableViewCell.swift in Sources */,
+				7E01EAB51EE75808000F36A5 /* SigninVC.swift in Sources */,
+				7E01EAB31EDEA3D3000F36A5 /* AuthProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7E5BBFD61ED3E27D00B277C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E5BBFD71ED3E27D00B277C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7E5BBFDB1ED3E27D00B277C0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E5BBFDC1ED3E27D00B277C0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E5BBFDF1ED3E27D00B277C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E5BBFE01ED3E27D00B277C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E5BBFE21ED3E27D00B277C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B68269F11169105050D774D5 /* Pods-MAGyms Coach.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 97596MTDSE;
+				INFOPLIST_FILE = "MAGyms Coach/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dennistonsutherland.MAGyms-Coach";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E5BBFE31ED3E27D00B277C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9096C420024D959ACB0D5D33 /* Pods-MAGyms Coach.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 97596MTDSE;
+				INFOPLIST_FILE = "MAGyms Coach/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dennistonsutherland.MAGyms-Coach";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E5BBFC81ED3E27D00B277C0 /* Build configuration list for PBXProject "MAGyms Coach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E5BBFDF1ED3E27D00B277C0 /* Debug */,
+				7E5BBFE01ED3E27D00B277C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E5BBFE11ED3E27D00B277C0 /* Build configuration list for PBXNativeTarget "MAGyms Coach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E5BBFE21ED3E27D00B277C0 /* Debug */,
+				7E5BBFE31ED3E27D00B277C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E5BBFC51ED3E27D00B277C0 /* Project object */;
+}
